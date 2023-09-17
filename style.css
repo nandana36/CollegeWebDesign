@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #662a41;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 20px; /* Added margin from the top */
+    padding: 10px 20px;
+    color:#F1C40F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.navbar-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 10px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #f1c40f;
+    font-weight: bold;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+
+.post-container {
+    
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px 10px rgba(124, 89, 89, 0.31);
+  }
+ 
+  .post-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .post-header1 {
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  
+  .post-content {
+    margin-top: 10px;
+    line-height: 1.8;
+    font-size: 17px;
+  }
+  .box1, .box2 {
+    background-color: #f0f0f0; /* Set the background color */
+    border: 1px solid #ccc; /* Add a border for visual separation */
+    padding: 20px; /* Add some padding inside the boxes */
+    margin: 10px 0; /* Add some space above and below the boxes */
+}
+
+.box1 {
+    float: left; /* Float the first box to the left */
+    width: calc(50% - 10px); /* Set the width to half minus margin */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.box2 {
+    clear: left; /* Clear the float to ensure the second box starts on a new line */
+    width: calc(50% - 10px); /* Set the width to half minus margin */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+

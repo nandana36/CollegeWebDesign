@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .navbar {
+    background-color: #662a41;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 20px; /* Added margin from the top */
+    padding: 10px 20px;
+    color:#F1C40F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.navbar-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 10px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #f1c40f;
+    font-weight: bold;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .sub-container {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+          
+            background-color:#450c17f6;
+            color: whitesmoke;
+           
+        }
+        .sub-container1 {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+           
+           
+        }
+
+        .box {
+            flex: 0 0 calc(25% - 20px); /* Each box takes 25% width with some margin */
+            height: 400px;
+            border: 1px solid rgb(139, 37, 37);
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+           
+        }
+
+        .inner-flex {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px; /* Increased width */
+            height: 200px; /* Increased height */
+        
+        }
+       
+        .square-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 30%;
+            box-shadow: 10px 10px 5px 5px rgba(124, 89, 89, 0.31);
+         
+        }
+        .box:hover{
+            transform: scale(1.08);
+            background-color: rgba(128, 128, 128, 0.307);
+        }
+       
+        .inner-flex1{
+          
+            align-items: center;
+            justify-content: center;
+           line-height: 0.0001;
+            
+            width: 200px;
+            
+        }
+        .inner-flex1.p{
+            line-height: 0.9;
+        }
+
+       
+        .btn {
+            border-radius: 100%;
+            object-fit: cover;
+            
+          
+
+        }
+        
+        .btn:hover{
+            transform: scale(1.08);
+            background-color: #f1c40f;
+
+        }
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            flex-direction: column; /* Set the flex direction to column */
+        }
+
+        .flex-item {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 5px 0; /* Add margin between items */
+        }
+
+        @media (max-width: 464px) {
+            .box {
+                flex: 0 0 100%; /* Each box takes full width */
+                margin-left: 0px;
+                
+                
+                
+            }
+           
+        }
+        
+        
+    
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">Department of CSE</div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sub-container1">
+        <h1>Head Of Department</h1>
+    </div>
+    
+    <div class="flex-container">
+        <div class="box">
+            <div class="inner-flex">
+                <img class="square-img" src="./staffimages/Hod.png" alt="Image 1">
+            </div>
+            <div class="inner-flex1">
+                <div class="content-lines">
+                    <h3>DR.Anitha Kumari S</h3> <br>
+                    <h4>ASSOCIATE PROFESSOR</h4> <br>
+                    <h4>MTECH</h4> <br>
+                   
+                </div>
+                <div class="content-lines " padding-botton="20px">
+                    <p>Phd in Cloud Computing<br> <br> </p>
+                    
+                </div>
+                <div class="content-lines">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                    <button type="button" class="btn btn-outline-primary"> <a href="../Signup page/index.html"><img src="../" alt="x" srcset=""></a></button>
+                    <button type="button" class="btn btn-outline-primary">Middle</button>
+                    <button type="button" class="btn btn-outline-primary">Right</button>
+                  </div>
+                  </div>
+                
+            </div>
+            
+            
+        </div>
+        
+    </div>
+    <div class="sub-container">
+        <h1>Faculty</h1>
+    </div>
+    
+   
+		
+
+
+
+    
+
+<div class="main-container">
+    <div class="box">
+        <div class="inner-flex">
+            <img class="square-img" src="./staffimages/abdulsir.png" alt="Image 1">
+        </div>
+        <div class="inner-flex1">
+            <div class="content-lines">
+                <h3>DR.M.Abdul Rahman</h3> <br>
+                <h4>PROFESSOR</h4> <br>
+                <h4>MTECH</h4> <br>
+               
+            </div>
+            <div class="content-lines " padding-botton="20px">
+                <p>Phd in image processing<br> <br> </p>
+                
+            </div>
+            <div class="content-lines">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                <button type="button" class="btn btn-outline-primary"> <a href="../Signup page/index.html"><img src="../" alt="x" srcset=""></a></button>
+                <button type="button" class="btn btn-outline-primary">Middle</button>
+                <button type="button" class="btn btn-outline-primary">Right</button>
+              </div>
+              </div>
+            
+        </div>
+        
+        
+    </div>
+    <div class="box">
+        <div class="inner-flex">
+            <img class="square-img" src="./staffimages/manoj.png" alt="Image 2">
+        </div>
+        <div class="inner-flex1">
+            <div class="content-lines">
+                <h3>DR.Manoj Kumar G</h3> <br>
+                <h4>ASSOCIATE PROFESSOR</h4> <br>
+                <h4>MTECH </h4> <br>
+               
+            </div>
+            <div class="content-lines " padding-botton="20px">
+                <p>Phd in Adhoc Sensor Network<br> <br> </p>
+                
+            </div>
+            <div class="content-lines">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                <button type="button" class="btn btn-outline-primary"> <a href="../Signup page/index.html"><img src="../" alt="x" srcset=""></a></button>
+                <button type="button" class="btn btn-outline-primary">Middle</button>
+                <button type="button" class="btn btn-outline-primary">Right</button>
+              </div>
+              </div>
+            
+        </div>
+        
+            
+        
+    </div>
+    <div class="box">
+        <div class="inner-flex">
+            <img class="square-img" src="./staffimages/profsree.png" alt="Image 3">
+        </div>
+        <div class="inner-flex1">
+            <div class="content-lines">
+                <h3>DR.Sreelatha S H</h3> <br>
+                <h4>ASSOCIATE PROFESSOR</h4> <br>
+                <h4>MTECH</h4> <br>
+               
+            </div>
+            <div class="content-lines " padding-botton="20px">
+                <p>Phd in Image Processing<br> <br> </p>
+                
+            </div>
+            <div class="content-lines">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                <button type="button" class="btn btn-outline-primary"> <a href="../Signup page/index.html"><img src="../" alt="x" srcset=""></a></button>
+                <button type="button" class="btn btn-outline-primary">Middle</button>
+                <button type="button" class="btn btn-outline-primary">Right</button>
+              </div>
+              </div>
+            
+        </div>
+    </div>
+    <div class="box">
+        <div class="inner-flex">
+            <img class="square-img" src="./staffimages/smitha.png" alt="Image 4">
+        </div>
+        <div class="inner-flex1">
+            <div class="content-lines">
+                <h3>Prof.Smitha E S</h3> <br>
+                <h4>ASSOCIATE PROFESSOR</h4> <br>
+                <h4>MTECH</h4> <br>
+               
+            </div>
+            <div class="content-lines " padding-botton="20px">
+                <p>Doing PhD<br> <br> </p>
+                
+            </div>
+            <div class="content-lines">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                <button type="button" class="btn btn-outline-primary"> <a href="../Signup page/index.html"><img src="../" alt="x" srcset=""></a></button>
+                <button type="button" class="btn btn-outline-primary">Middle</button>
+                <button type="button" class="btn btn-outline-primary">Right</button>
+              </div>
+              </div>
+            
+        </div>
+    </div>
+    <div class="box">
+        <div class="inner-flex">
+            <img class="square-img" src="./staffimages/projayalekshmi.png" alt="Image 4">
+        </div>
+        <div class="inner-flex1">
+            <div class="content-lines">
+                <h3>Prof.Jayalekshmi S</h3> <br>
+                <h4>ASSOCIATE PROFESSOR</h4> <br>
+                <h4>MTECH</h4> <br>
+               
+            </div>
+            <div class="content-lines " padding-botton="20px">
+                <p>Doing PhD<br> <br> </p>
+                
+            </div>
+            <div class="content-lines">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                <button type="button" class="btn btn-outline-primary"> <a href="../Signup page/index.html"><img src="../" alt="x" srcset=""></a></button>
+                <button type="button" class="btn btn-outline-primary">Middle</button>
+                <button type="button" class="btn btn-outline-primary">Right</button>
+              </div>
+              </div>
+            
+        </div>
+    </div>
+    <div class="box">
+        <div class="inner-flex">
+            <img class="square-img" src="./staffimages/Screenshot 2023-09-16 225946.png" alt="Image 4">
+        </div>
+        <div class="inner-flex1">
+            <div class="content-lines">
+                <h3>DR.Smitha Vas P</h3> <br>
+                <h4>ASSISTANT PROFESSOR</h4> <br>
+                <h4>MTECH</h4> <br>
+               
+            </div>
+            <div class="content-lines " padding-botton="20px">
+                <p>Phd in Image Processing<br> <br> </p>
+                
+            </div>
+            <div class="content-lines">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                <button type="button" class="btn btn-outline-primary"> <a href="../Signup page/index.html"><img src="../" alt="x" srcset=""></a></button>
+                <button type="button" class="btn btn-outline-primary">Middle</button>
+                <button type="button" class="btn btn-outline-primary">Right</button>
+              </div>
+              </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+</body>
+</html>
+
